@@ -68,7 +68,7 @@ for i in range(0,len(names)):
     b= names[i][names[i].index(' ')+1]
     name_short.append(a+b)
 
-print(name_short)
+print(name_short,type(a))
 # A2c:
 
 
@@ -109,21 +109,21 @@ print("\nQ4b\n")
 # Q4b: Continue this code and print "prime" if the number is a prime number and "not prime" otherwise
 
 
-# def prime(num):
-#     root = int(round((int(num))**0.5))
-#     factors = [i for i in range(2, root+1) if num % i == 0]
-#     return not factors
-#
-# while cont:
-#     b = input("Enter number greater than 100")
-#     if int(b) > 100:
-#         if prime(int(b)) == True:
-#             print("number is prime")
-#         else:
-#             print("number is not prime")
-#         cont = False
-#     else:
-#         print("Enter a higher number")
-#
+def prime(num):
+    root = int(round((int(num))**0.5))
+    factors = [i for i in range(2, root+1) if num % i == 0]
+    return not factors
+
+while cont:
+    b = input("Enter number greater than 100")
+    if int(b) > 100:
+        if prime(int(b)) == True:
+            print("number is prime")
+        else:
+            print("number is not prime")
+        cont = False
+    else:
+        print("Enter a higher number")
+
 
 # A4b:
