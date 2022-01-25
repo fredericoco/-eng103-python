@@ -37,14 +37,15 @@
 # print(f"Double your age is {int(age)*2}")
 #
 # # Max age = 119
-
-i = 1
-while True:
-    print(i)
-    if i == 10:
-        break
-    print("adding 1 to i")
-    elif i == 3:
-        continue
-    print("adding 1 to i")
-    print("back to the top")
+#
+# i = 1
+# while True:
+#     print(i)
+#     if i == 10:
+#         break
+#     print("adding 1 to i")
+#     elif i == 3:
+#         continue
+#     print("adding 1 to i")
+#     print("back to the top")
+print(("2" and "23").isnumeric)

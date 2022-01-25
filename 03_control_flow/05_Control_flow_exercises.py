@@ -31,13 +31,13 @@ print("\nQ2a\n")
 # Q2a: from the list of names, create another list that consists of only the first letters of each first name
 # e.g. ["Alan Turing", "Leonardo Fibonacci"] -> ["A", "L"]
 names = ["Alan Turing", "Leonardo Fibonacci", "Katherine Johnson", "Annie Easley", "Terence Tao"]
-print(names[0][0])
-
-print(names[1][0])
-for i in range(0, 2):
-    list = []
+list = []
+for i in range(0, len(names)):
     list.append(names[i][0])
+    list.append(names[i][1])
+
 print(list)
+
 
 # A2a:
 
@@ -48,11 +48,11 @@ print("\nQ2b\n")
 # Q2b: from the list of names, create another list that consists of only the index of the space in the string
 # HINT: use your_string.index("substring")
 names = ["Alan Turing", "Leonardo Fibonacci", "Katherine Johnson", "Annie Easley", "Terence Tao"]
-
+c = []
 for i in range(0,len(names)):
-    c=[]
     c.append((names[i].index(' ')))
-    print(c)
+
+print(c)
 
 
 # A2b:
