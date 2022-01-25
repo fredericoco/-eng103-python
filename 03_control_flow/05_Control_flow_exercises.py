@@ -52,7 +52,8 @@ names = ["Alan Turing", "Leonardo Fibonacci", "Katherine Johnson", "Annie Easley
 for i in range(0,len(names)):
     c=[]
     c.append((names[i].index(' ')))
-print(c)
+    print(c)
+
 
 # A2b:
 

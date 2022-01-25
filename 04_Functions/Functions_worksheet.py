@@ -117,11 +117,15 @@ print(prime_decider(123))
 print(prime_decider(17))
 print("\nQ3b\n")
 # Q3b: Now add some functionality to the function which does not error if the user inputs something other than a digit
-def digit_prime(number):
-    if number > 9 and number.isnumeric:
-        print(prime_decider(number))
-    return
+def digit_prime(user_input):
+    if str(user_input).isdigit():
+        if prime_decider(int(user_input)):
+            return False
+        else:
+            return True
+    else:
+        return "Not valid input"
 # A3b:
-
+print(digit_prime(102))
 
 # -------------------------------------------------------------------------------------- #
