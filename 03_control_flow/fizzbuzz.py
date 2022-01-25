@@ -11,7 +11,7 @@ word_b = input("Please enter the word which will be printed when dividable by 5"
 # The modular determines whether it's a factor of 3,5, or 15 and therefore printing the word when appropriate
 for i in range(lower_limit, upper_limit+1):
     if i % 15 == 0:
-        print(word_b + " " + word_a)
+        print(word_b+word_a)
     elif i % 5 == 0:
         print(word_b)
     elif i % 3 == 0:
