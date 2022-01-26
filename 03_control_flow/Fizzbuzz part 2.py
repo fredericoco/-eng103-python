@@ -7,10 +7,6 @@ def number_input(upper_limit, lower_limit):
             print("please enter in a valid number in digits")
 
 
-#  The two variables below determine the two words printed by the game when something is
-#  dividable by 3, 5 or 15 without having a remainder
-
-
 def word_input(word_a, word_b):
     user_input2 = True
     while user_input2:
@@ -19,9 +15,6 @@ def word_input(word_a, word_b):
         else:
             print("please enter a valid word")
 
-
-#  for loop over the range created by the user
-# The modular determines whether it's a factor of 3,5, or 15 and therefore printing the word when appropriate
 
 def fizzbuzz(upper_limit, lower_limit, word_a, word_b):
     for i in range(lower_limit, upper_limit):
@@ -35,6 +28,7 @@ def fizzbuzz(upper_limit, lower_limit, word_a, word_b):
             print(i)
         pass
 
+#use global variables
 
 # word_at = input("Please enter the word which will be printed when dividable by 3")
 # word_bt = input("Please enter the word which will be printed when dividable by 5")
