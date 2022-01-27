@@ -32,5 +32,4 @@ import requests
 r = requests.get("http://www.bbc.co.uk")
 print(r, type(r))
 print(r.status_code)
-#print(r.content)
-r.
+# print(r.content)
