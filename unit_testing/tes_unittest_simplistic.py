@@ -1,4 +1,4 @@
-from simplecalc import SimpleCalc
+from unit_testing.simplecalc import SimpleCalc
 import unittest
 
 
@@ -6,6 +6,10 @@ import unittest
 
 class CalcTests(unittest.TestCase):
     calc = SimpleCalc()
+
+    def setUp(self):
+        self.calc = SimpleCalc()
+        print("Setting up")
 
     def test_add(self):
         actual = self.calc.add(4, 2)
